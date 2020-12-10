@@ -11,7 +11,7 @@ export default class NavLink extends Component {
                            <Link className="nav-link"  to="/login"  >登录</Link>
                        </li>
                        <li className="nav-item" >
-                           <Link className="nav-link" to="signup" >注册</Link>
+                           <Link className="nav-link" to="/signup" >注册</Link>
                        </li>
                    </ul>
                </div>
