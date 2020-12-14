@@ -5,7 +5,8 @@ export default class LoginContent extends Component {
         super(props);
         this.state  = {
             username:"",
-            password:""
+            password:"",
+            error:{}
         }
     }
     onChange = (e)=>{
@@ -15,6 +16,10 @@ export default class LoginContent extends Component {
     }
     onSubmit = (e)=>{   
         e.preventDefault();
+        // console.log(this.state)
+        this.props.loginAction(this.state).then((res)=>{
+            console.log(res)
+        })
     }
     render() {
         return (
